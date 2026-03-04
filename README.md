@@ -1,3 +1,5 @@
+# 在ROS2中同时载入摄像头读取和篮筐识别
+
 ### 方式一：launch
 ```bash
 ros2 launch hoop_detector hoop_system.launch.py 
@@ -5,7 +7,7 @@ ros2 launch hoop_detector hoop_system.launch.py
 
 ### 方法二：手动加载组件
 **终端 1: 启动组件容器**
-首先，启动一个空的组件容器，它将作为后续加载组件的“家”。
+首先，启动一个空的组件容器
 ```bash
 ros2 run rclcpp_components component_container
 ```
